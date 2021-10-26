@@ -10,7 +10,7 @@ function Clientes() {
       <details>
         <sumary></sumary>
         <ul>
-          <li>Nome completo: {dados.nome + " " + dados.sobrenome}</li>
+          <li>Nome: {dados.nome + " " + dados.sobrenome}</li>
           <li>E-mail: {dados.email}</li>
           <li>Telefone: {dados.telefone}</li>
           <li>CEP: {dados.cep}</li>
@@ -22,7 +22,6 @@ function Clientes() {
         </ul>
       </details>
       </div>
-
     </div>
   );
 }
