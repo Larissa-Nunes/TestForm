@@ -14,6 +14,8 @@ const steps = [
   }
 ];
 
+var dados;
+
 export default function Cadastrar() {
   const [currentStep, setCurrentStep] = useState(0);
   const [loading, setLoading] = useState(false);
@@ -46,12 +48,14 @@ export default function Cadastrar() {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    console.log("Form sent...", formValues);
+    //console.log("Form sent...", formValues);
 
     setLoading(true);
 
     // simulação de api
     await fakeApi(() => setLoading(false), 1000);
+    dados = formValues;
+    return dados;
   }
 
   return (
@@ -187,3 +191,5 @@ export default function Cadastrar() {
     </div>
   );
 }
+
+export {dados, Cadastrar};

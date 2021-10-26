@@ -1,0 +1,45 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1 {
+    padding: 20px;
+    font-size: 30px;
+}
+.clientes {
+    text-align: center;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.clientes li{
+    text-align: left;
+}
+
+details {
+    font-size: 18px;
+}
+
+li {
+    font-size: 14px;
+}
+
+sumary {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.details {
+    background: #fff;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 8px 8px 24px #ccc;
+    max-width: 50%;
+    position: relative;
+    overflow: hidden;
+}
