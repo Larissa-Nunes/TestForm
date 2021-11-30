@@ -71,36 +71,41 @@ export default function Cadastrar() {
           {steps[currentStep].id === "PESSOAL" && (
             <div className="fields">
               <div className="field">
+                <h3>Nome:</h3>
                 <input
                   type="text"
-                  placeholder="Digite o seu nome"
+                  placeholder="Digite aqui..." required=""
                   name="nome"
                   onChange={handleInputChange}
                   value={formValues.nome}
                 />
               </div>
               <div className="field">
+              <h3>Sobrenome:</h3>
                 <input
                   type="text"
-                  placeholder="Digite o seu sobrenome"
+                  placeholder="Digite aqui..." required=""
                   name="sobrenome"
                   onChange={handleInputChange}
                   value={formValues.sobrenome}
                 />
               </div>
               <div className="field">
+              <h3>E-mail:</h3>
                 <input
-                  type="text"
-                  placeholder="Digite o seu e-mail"
+                  type="email"
+                  placeholder="email@email.com" required=""
                   name="email"
                   onChange={handleInputChange}
                   value={formValues.email}
                 />
               </div>
               <div className="field">
+              <h3>Telefone:</h3>
                 <input
-                  type="text"
-                  placeholder="Digite o seu telefone"
+                pattern="^\d{4}-\d{3}-\d{4}$" 
+                  type="tel"
+                  placeholder="(XX)XXXXX-XXXX" required=""
                   name="telefone"
                   onChange={handleInputChange}
                   value={formValues.telefone}
@@ -112,27 +117,30 @@ export default function Cadastrar() {
           {steps[currentStep].id === "ENDERECO" && (
             <div className="fields">
               <div className="field">
+              <h3>CEP:</h3>
                 <input
                   type="text"
-                  placeholder="Digite o seu CEP"
+                  placeholder="XXXXX-XXX" required=""
                   name="cep"
                   onChange={handleInputChange}
                   value={formValues.cep}
                 />
               </div>
               <div className="field">
+              <h3>Endereço I:</h3>
                 <input
                   type="text"
-                  placeholder="Digite o seu endereço 01"
+                  placeholder="Digite aqui..." required=""
                   name="endereco1"
                   onChange={handleInputChange}
                   value={formValues.endereco1}
                 />
               </div>
               <div className="field">
+              <h3>Endereço II:</h3>
                 <input
                   type="text"
-                  placeholder="Digite o seu endereço 02"
+                  placeholder="Digite aqui..." required=""
                   name="endereco2"
                   onChange={handleInputChange}
                   value={formValues.endereco2}
@@ -144,27 +152,30 @@ export default function Cadastrar() {
           {steps[currentStep].id === "DADOS" && (
             <div className="fields">
               <div className="field">
+              <h3>Data de Nascimento:</h3>
                 <input
-                  type="text"
-                  placeholder="Digite a sua data de nascimento"
+                  type="date"
+                  placeholder="DD/MM/AAAA" required=""
                   name="data_nascimento"
                   onChange={handleInputChange}
                   value={formValues.data_nascimento}
                 />
               </div>
               <div className="field">
+              <h3>CPF:</h3>
                 <input
                   type="text"
-                  placeholder="Digite o seu CPF"
+                  placeholder="XXX.XXX.XXX-XX" required=""
                   name="cpf"
                   onChange={handleInputChange}
                   value={formValues.cpf}
                 />
               </div>
               <div className="field">
+              <h3>Renda Mensal:</h3>
                 <input
                   type="text"
-                  placeholder="Digite a sua renda mensal"
+                  placeholder="Digite aqui..." required=""
                   name="renda_mensal"
                   onChange={handleInputChange}
                   value={formValues.renda_mensal}
